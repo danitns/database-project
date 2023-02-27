@@ -402,5 +402,10 @@
   <ItemGroup>
     <None Include="Resources\diagrama_conceptuala%282%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="script\diagrama_conceptuala%283%29.png" />
+    <Content Include="script\diagrama_er%283%29.png" />
+    <Content Include="script\script.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
