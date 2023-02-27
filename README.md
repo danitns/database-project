@@ -5,6 +5,10 @@
 ![ss2](https://github.com/danitns/database-project/blob/master/sdf_bd/script/2.png)
 ![ss3](https://github.com/danitns/database-project/blob/master/sdf_bd/script/3.png)
 
+## Diagrams
+![er](https://github.com/danitns/database-project/blob/master/sdf_bd/script/diagrama_er(3).png)
+![conceptuala](https://github.com/danitns/database-project/blob/master/sdf_bd/script/diagrama_conceptuala(3).png)
+
 ## SQL Script for database creation:
 ```sql
 --create database SALA_DE_FITNESS;
