@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE4DFCB3-0D12-4BA1-B620-2EA4E3B22DB1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>sdf_bd.My.MyApplication</StartupObject>
+    <RootNamespace>sdf_bd</RootNamespace>
+    <AssemblyName>sdf_bd</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>sdf_bd.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>sdf_bd.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abonament\Abonament.vb" />
+    <Compile Include="Abonament\AddAbonament.Designer.vb">
+      <DependentUpon>AddAbonament.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Abonament\AddAbonament.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abonament\DbAbonament.vb" />
+    <Compile Include="Abonament\FormAbonament.Designer.vb">
+      <DependentUpon>FormAbonament.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Abonament\FormAbonament.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSala.Designer.vb">
+      <DependentUpon>AddSala.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddSala.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Antrenor\AddAntrenor.Designer.vb">
+      <DependentUpon>AddAntrenor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Antrenor\AddAntrenor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Antrenor\Antrenor.vb" />
+    <Compile Include="Antrenor\DbAntrenor.vb" />
+    <Compile Include="Antrenor\FormAntrenor.Designer.vb">
+      <DependentUpon>FormAntrenor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Antrenor\FormAntrenor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clasa\AddClasa.Designer.vb">
+      <DependentUpon>AddClasa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clasa\AddClasa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clasa\Clasa.vb" />
+    <Compile Include="Clasa\DbClasa.vb" />
+    <Compile Include="Clasa\FormClasa.Designer.vb">
+      <DependentUpon>FormClasa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clasa\FormClasa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\AddClient.Designer.vb">
+      <DependentUpon>AddClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Client\AddClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\Client.vb" />
+    <Compile Include="Client\DbClient.vb" />
+    <Compile Include="Client\FormClient.Designer.vb">
+      <DependentUpon>FormClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Client\FormClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DbDiagram.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DbDiagram.Designer.vb">
+      <DependentUpon>DbDiagram.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DbSala.vb" />
+    <Compile Include="FormOpGrBy.Designer.vb">
+      <DependentUpon>FormOpGrBy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormOpGrBy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOpJoin.Designer.vb">
+      <DependentUpon>FormOpJoin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormOpJoin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSala.Designer.vb">
+      <DependentUpon>FormSala.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSala.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mentenanta\AddMentenanta.Designer.vb">
+      <DependentUpon>AddMentenanta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mentenanta\AddMentenanta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mentenanta\DbMentenanta.vb" />
+    <Compile Include="Mentenanta\FormMentenanta.Designer.vb">
+      <DependentUpon>FormMentenanta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mentenanta\FormMentenanta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mentenanta\Mentenanta.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Program\AddProgram.Designer.vb">
+      <DependentUpon>AddProgram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\AddProgram.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\DbProgram.vb" />
+    <Compile Include="Program\FormProgram.Designer.vb">
+      <DependentUpon>FormProgram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\FormProgram.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Program.vb" />
+    <Compile Include="Sala.vb" />
+    <Compile Include="SALA_DE_FITNESSDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SALA_DE_FITNESSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SALA_DE_FITNESSDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SALA_DE_FITNESSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Stoc\AddStoc.Designer.vb">
+      <DependentUpon>AddStoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stoc\AddStoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stoc\DbStoc.vb" />
+    <Compile Include="Stoc\FormStoc.Designer.vb">
+      <DependentUpon>FormStoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stoc\FormStoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stoc\Stoc.vb" />
+    <Compile Include="Supliment\AddSupliment.Designer.vb">
+      <DependentUpon>AddSupliment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supliment\AddSupliment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supliment\DbSupliment.vb" />
+    <Compile Include="Supliment\FormSupliment.Designer.vb">
+      <DependentUpon>FormSupliment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supliment\FormSupliment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supliment\Supliment.vb" />
+    <Compile Include="Tranzactie\AddTranzactie.Designer.vb">
+      <DependentUpon>AddTranzactie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tranzactie\AddTranzactie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tranzactie\DbTranzactie.vb" />
+    <Compile Include="Tranzactie\FormTranzactie.Designer.vb">
+      <DependentUpon>FormTranzactie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tranzactie\FormTranzactie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tranzactie\Tranzactie.vb" />
+    <Compile Include="Vizualizari\AddVizComp.Designer.vb">
+      <DependentUpon>AddVizComp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vizualizari\AddVizComp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vizualizari\DbVizComp.vb" />
+    <Compile Include="Vizualizari\FormVizComp.Designer.vb">
+      <DependentUpon>FormVizComp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vizualizari\FormVizComp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vizualizari\FormVizSimp.Designer.vb">
+      <DependentUpon>FormVizSimp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vizualizari\FormVizSimp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Abonament\AddAbonament.resx">
+      <DependentUpon>AddAbonament.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abonament\FormAbonament.resx">
+      <DependentUpon>FormAbonament.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSala.resx">
+      <DependentUpon>AddSala.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Antrenor\AddAntrenor.resx">
+      <DependentUpon>AddAntrenor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Antrenor\FormAntrenor.resx">
+      <DependentUpon>FormAntrenor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clasa\AddClasa.resx">
+      <DependentUpon>AddClasa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clasa\FormClasa.resx">
+      <DependentUpon>FormClasa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\AddClient.resx">
+      <DependentUpon>AddClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\FormClient.resx">
+      <DependentUpon>FormClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DbDiagram.resx">
+      <DependentUpon>DbDiagram.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOpGrBy.resx">
+      <DependentUpon>FormOpGrBy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOpJoin.resx">
+      <DependentUpon>FormOpJoin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSala.resx">
+      <DependentUpon>FormSala.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mentenanta\AddMentenanta.resx">
+      <DependentUpon>AddMentenanta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mentenanta\FormMentenanta.resx">
+      <DependentUpon>FormMentenanta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\AddProgram.resx">
+      <DependentUpon>AddProgram.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\FormProgram.resx">
+      <DependentUpon>FormProgram.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stoc\AddStoc.resx">
+      <DependentUpon>AddStoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stoc\FormStoc.resx">
+      <DependentUpon>FormStoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supliment\AddSupliment.resx">
+      <DependentUpon>AddSupliment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supliment\FormSupliment.resx">
+      <DependentUpon>FormSupliment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tranzactie\AddTranzactie.resx">
+      <DependentUpon>AddTranzactie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tranzactie\FormTranzactie.resx">
+      <DependentUpon>FormTranzactie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vizualizari\AddVizComp.resx">
+      <DependentUpon>AddVizComp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vizualizari\FormVizComp.resx">
+      <DependentUpon>FormVizComp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vizualizari\FormVizSimp.resx">
+      <DependentUpon>FormVizSimp.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="SALA_DE_FITNESSDataSet.xsc">
+      <DependentUpon>SALA_DE_FITNESSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SALA_DE_FITNESSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SALA_DE_FITNESSDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SALA_DE_FITNESSDataSet.xss">
+      <DependentUpon>SALA_DE_FITNESSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SALA_DE_FITNESSDataSet1.xsc">
+      <DependentUpon>SALA_DE_FITNESSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SALA_DE_FITNESSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SALA_DE_FITNESSDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SALA_DE_FITNESSDataSet1.xss">
+      <DependentUpon>SALA_DE_FITNESSDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diagrama_conceptuala%282%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

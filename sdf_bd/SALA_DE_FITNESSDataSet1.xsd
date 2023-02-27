@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SALA_DE_FITNESSDataSet1" targetNamespace="http://tempuri.org/SALA_DE_FITNESSDataSet1.xsd" xmlns:mstns="http://tempuri.org/SALA_DE_FITNESSDataSet1.xsd" xmlns="http://tempuri.org/SALA_DE_FITNESSDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="SALA_DE_FITNESSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SALA_DE_FITNESSConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.sdf_bd.My.MySettings.GlobalReference.Default.SALA_DE_FITNESSConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_MENTENANTATableAdapter" GeneratorDataComponentClassName="V_MENTENANTATableAdapter" Name="V_MENTENANTA" UserDataComponentName="V_MENTENANTATableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SALA_DE_FITNESSConnectionString (MySettings)" DbObjectName="SALA_DE_FITNESS.dbo.V_MENTENANTA" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_SALA, MedieSal FROM dbo.V_MENTENANTA</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_SALA" DataSetColumn="ID_SALA" />
+              <Mapping SourceColumn="MedieSal" DataSetColumn="MedieSal" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_SALA_ANTRENORTableAdapter" GeneratorDataComponentClassName="V_SALA_ANTRENORTableAdapter" Name="V_SALA_ANTRENOR" UserDataComponentName="V_SALA_ANTRENORTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SALA_DE_FITNESSConnectionString (MySettings)" DbObjectName="SALA_DE_FITNESS.dbo.V_SALA_ANTRENOR" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_SALA, ID_ANTRENOR, NUME, PRENUME, SALARIU, NUME_SALA, ADRESA, EMAIL, TELEFON FROM dbo.V_SALA_ANTRENOR</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_SALA" DataSetColumn="ID_SALA" />
+              <Mapping SourceColumn="ID_ANTRENOR" DataSetColumn="ID_ANTRENOR" />
+              <Mapping SourceColumn="NUME" DataSetColumn="NUME" />
+              <Mapping SourceColumn="PRENUME" DataSetColumn="PRENUME" />
+              <Mapping SourceColumn="SALARIU" DataSetColumn="SALARIU" />
+              <Mapping SourceColumn="NUME_SALA" DataSetColumn="NUME_SALA" />
+              <Mapping SourceColumn="ADRESA" DataSetColumn="ADRESA" />
+              <Mapping SourceColumn="EMAIL" DataSetColumn="EMAIL" />
+              <Mapping SourceColumn="TELEFON" DataSetColumn="TELEFON" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SALA_DE_FITNESSDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SALA_DE_FITNESSDataSet1" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SALA_DE_FITNESSDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_MENTENANTA" msprop:Generator_RowEvHandlerName="V_MENTENANTARowChangeEventHandler" msprop:Generator_RowDeletedName="V_MENTENANTARowDeleted" msprop:Generator_RowDeletingName="V_MENTENANTARowDeleting" msprop:Generator_RowEvArgName="V_MENTENANTARowChangeEvent" msprop:Generator_TablePropName="V_MENTENANTA" msprop:Generator_RowChangedName="V_MENTENANTARowChanged" msprop:Generator_RowChangingName="V_MENTENANTARowChanging" msprop:Generator_TableClassName="V_MENTENANTADataTable" msprop:Generator_RowClassName="V_MENTENANTARow" msprop:Generator_TableVarName="tableV_MENTENANTA" msprop:Generator_UserTableName="V_MENTENANTA">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_SALA" msprop:Generator_ColumnPropNameInRow="ID_SALA" msprop:Generator_ColumnPropNameInTable="ID_SALAColumn" msprop:Generator_ColumnVarNameInTable="columnID_SALA" msprop:Generator_UserColumnName="ID_SALA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MedieSal" msprop:Generator_ColumnPropNameInRow="MedieSal" msprop:Generator_ColumnPropNameInTable="MedieSalColumn" msprop:Generator_ColumnVarNameInTable="columnMedieSal" msprop:Generator_UserColumnName="MedieSal" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V_SALA_ANTRENOR" msprop:Generator_RowEvHandlerName="V_SALA_ANTRENORRowChangeEventHandler" msprop:Generator_RowDeletedName="V_SALA_ANTRENORRowDeleted" msprop:Generator_RowDeletingName="V_SALA_ANTRENORRowDeleting" msprop:Generator_RowEvArgName="V_SALA_ANTRENORRowChangeEvent" msprop:Generator_TablePropName="V_SALA_ANTRENOR" msprop:Generator_RowChangedName="V_SALA_ANTRENORRowChanged" msprop:Generator_RowChangingName="V_SALA_ANTRENORRowChanging" msprop:Generator_TableClassName="V_SALA_ANTRENORDataTable" msprop:Generator_RowClassName="V_SALA_ANTRENORRow" msprop:Generator_TableVarName="tableV_SALA_ANTRENOR" msprop:Generator_UserTableName="V_SALA_ANTRENOR">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_SALA" msprop:Generator_ColumnPropNameInRow="ID_SALA" msprop:Generator_ColumnPropNameInTable="ID_SALAColumn" msprop:Generator_ColumnVarNameInTable="columnID_SALA" msprop:Generator_UserColumnName="ID_SALA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_ANTRENOR" msprop:Generator_ColumnPropNameInRow="ID_ANTRENOR" msprop:Generator_ColumnPropNameInTable="ID_ANTRENORColumn" msprop:Generator_ColumnVarNameInTable="columnID_ANTRENOR" msprop:Generator_UserColumnName="ID_ANTRENOR" type="xs:int" />
+              <xs:element name="NUME" msprop:Generator_ColumnPropNameInRow="NUME" msprop:Generator_ColumnPropNameInTable="NUMEColumn" msprop:Generator_ColumnVarNameInTable="columnNUME" msprop:Generator_UserColumnName="NUME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRENUME" msprop:Generator_ColumnPropNameInRow="PRENUME" msprop:Generator_ColumnPropNameInTable="PRENUMEColumn" msprop:Generator_ColumnVarNameInTable="columnPRENUME" msprop:Generator_UserColumnName="PRENUME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SALARIU" msprop:Generator_ColumnPropNameInRow="SALARIU" msprop:Generator_ColumnPropNameInTable="SALARIUColumn" msprop:Generator_ColumnVarNameInTable="columnSALARIU" msprop:Generator_UserColumnName="SALARIU" type="xs:int" minOccurs="0" />
+              <xs:element name="NUME_SALA" msprop:Generator_ColumnPropNameInRow="NUME_SALA" msprop:Generator_ColumnPropNameInTable="NUME_SALAColumn" msprop:Generator_ColumnVarNameInTable="columnNUME_SALA" msprop:Generator_UserColumnName="NUME_SALA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ADRESA" msprop:Generator_ColumnPropNameInRow="ADRESA" msprop:Generator_ColumnPropNameInTable="ADRESAColumn" msprop:Generator_ColumnVarNameInTable="columnADRESA" msprop:Generator_UserColumnName="ADRESA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EMAIL" msprop:Generator_ColumnPropNameInRow="EMAIL" msprop:Generator_ColumnPropNameInTable="EMAILColumn" msprop:Generator_ColumnVarNameInTable="columnEMAIL" msprop:Generator_UserColumnName="EMAIL">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TELEFON" msprop:Generator_ColumnPropNameInRow="TELEFON" msprop:Generator_ColumnPropNameInTable="TELEFONColumn" msprop:Generator_ColumnVarNameInTable="columnTELEFON" msprop:Generator_UserColumnName="TELEFON">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:V_SALA_ANTRENOR" />
+      <xs:field xpath="mstns:ID_ANTRENOR" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
