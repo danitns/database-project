@@ -406,8 +406,8 @@
     <Content Include="script\1.png" />
     <Content Include="script\2.png" />
     <Content Include="script\3.png" />
-    <Content Include="script\diagrama_conceptuala%283%29.png" />
-    <Content Include="script\diagrama_er%283%29.png" />
+    <Content Include="script\Conceptuala.png" />
+    <Content Include="script\ER.png" />
     <Content Include="script\script.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
